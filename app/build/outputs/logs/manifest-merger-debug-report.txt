@@ -79,6 +79,8 @@ ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidMani
 		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:12:19-47
 activity#com.example.elo7.LogoActivity
 ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:13:9-19:20
+	android:screenOrientation
+		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:13:49-85
 	android:name
 		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:13:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER

@@ -984,6 +984,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color logo
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1548,6 +1549,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable logo
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp
@@ -1759,6 +1761,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
+id img_logo
 id info
 id invisible
 id italic
@@ -1915,7 +1919,6 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter

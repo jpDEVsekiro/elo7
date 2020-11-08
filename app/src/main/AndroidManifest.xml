@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Elo7">
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".LogoActivity">
+        <activity android:name=".LogoActivity"  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -19,7 +19,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Elo7" >
         <activity android:name="com.example.elo7.MainActivity" />
-        <activity android:name="com.example.elo7.LogoActivity" >
+        <activity
+            android:name="com.example.elo7.LogoActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

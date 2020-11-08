@@ -31,20 +31,23 @@
 21        <activity android:name="com.example.elo7.MainActivity" />
 21-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:12:9-59
 21-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:12:19-47
-22        <activity android:name="com.example.elo7.LogoActivity" >
+22        <activity
 22-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:13:9-19:20
-22-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:13:19-47
-23            <intent-filter>
-23-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:14:13-18:29
-24                <action android:name="android.intent.action.MAIN" />
-24-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:15:17-69
-24-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:15:25-66
-25
-26                <category android:name="android.intent.category.LAUNCHER" />
-26-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:17:17-77
-26-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:17:27-74
-27            </intent-filter>
-28        </activity>
-29    </application>
-30
-31</manifest>
+23            android:name="com.example.elo7.LogoActivity"
+23-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:13:19-47
+24            android:screenOrientation="portrait" >
+24-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:13:49-85
+25            <intent-filter>
+25-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:14:13-18:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:15:17-69
+26-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:15:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:17:17-77
+28-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:17:27-74
+29            </intent-filter>
+30        </activity>
+31    </application>
+32
+33</manifest>
