@@ -13,15 +13,18 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="elo7"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Elo7" >
-        <activity android:name="com.example.elo7.MainActivity" />
+        <activity
+            android:name="com.example.elo7.MainActivity"
+            android:theme="@style/Theme.Elo7" />
         <activity
             android:name="com.example.elo7.LogoActivity"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Elo7logo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

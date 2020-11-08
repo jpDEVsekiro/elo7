@@ -14,8 +14,6 @@ public class LogoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logo);
-        getSupportActionBar().hide();
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN , WindowManager.LayoutParams.FLAG_FULLSCREEN);// torna a tela fullscreen
         new Handler().postDelayed(new Runnable() {//crio uma nova thead para que tela do logo fique aberto só 5 segundos
             @Override
             public void run() {
@@ -23,6 +21,6 @@ public class LogoActivity extends AppCompatActivity {
                 finish();// fecho a activity da logo
 
             }
-        },5000);
+        },3000);
     }
 }

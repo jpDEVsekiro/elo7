@@ -1630,6 +1630,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id act_logo
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1761,8 +1762,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView
-id img_logo
 id info
 id invisible
 id italic
@@ -1778,6 +1777,7 @@ id line3
 id linear
 id listMode
 id list_item
+id logo
 id masked
 id message
 id middle
@@ -2130,6 +2130,7 @@ string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string logo
 string material_slider_range_end
 string material_slider_range_start
 string mtrl_badge_numberless_content_description
@@ -2558,6 +2559,7 @@ style TextAppearance_MaterialComponents_Tooltip
 style TextAppearance_Widget_AppCompat_ExpandedMenu_Item
 style TextAppearance_Widget_AppCompat_Toolbar_Subtitle
 style TextAppearance_Widget_AppCompat_Toolbar_Title
+style Theme_0Elo7
 style Theme_AppCompat
 style Theme_AppCompat_CompactMenu
 style Theme_AppCompat_DayNight
@@ -2587,6 +2589,7 @@ style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
 style Theme_Elo7
+style Theme_Elo7logo
 style Theme_MaterialComponents
 style Theme_MaterialComponents_BottomSheetDialog
 style Theme_MaterialComponents_Bridge

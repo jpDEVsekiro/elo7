@@ -64,7 +64,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\He
 	android:supportsRtl
 		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:8:9-29
 	android:roundIcon
 		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
@@ -74,13 +74,17 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\He
 	android:theme
 		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:11:9-42
 activity#com.example.elo7.MainActivity
-ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:12:9-59
+ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:12:9-93
+	android:theme
+		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:12:48-81
 	android:name
 		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:12:19-47
 activity#com.example.elo7.LogoActivity
 ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:13:9-19:20
 	android:screenOrientation
 		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:13:49-85
+	android:theme
+		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:13:86-123
 	android:name
 		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:13:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
