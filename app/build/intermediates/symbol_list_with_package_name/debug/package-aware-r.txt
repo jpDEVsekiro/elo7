@@ -1663,6 +1663,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id bar_search
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -1811,6 +1812,7 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
+id mytoolbar
 id navigation_header_container
 id never
 id noScroll
