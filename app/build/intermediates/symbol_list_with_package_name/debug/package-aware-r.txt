@@ -1663,7 +1663,9 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id bar
 id bar_search
+id barin
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -1692,6 +1694,7 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
+id constraintLayout
 id container
 id content
 id contentPanel
@@ -1921,6 +1924,7 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2120,6 +2124,7 @@ string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string button
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern

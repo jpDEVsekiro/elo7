@@ -2,6 +2,8 @@ com/example/elo7/BuildConfig.java
  com.example.elo7.BuildConfig
 com/example/elo7/MainActivity.java
  com.example.elo7.MainActivity
+ com.example.elo7.MainActivity$1
+ com.example.elo7.MainActivity$2
 com/example/elo7/LogoActivity.java
  com.example.elo7.LogoActivity
  com.example.elo7.LogoActivity$1
