@@ -1537,6 +1537,9 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_click
+drawable custom_button
+drawable custon_search
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1673,6 +1676,15 @@ id beginning
 id blocking
 id bottom
 id bounce
+id button
+id button2
+id button3
+id button4
+id button5
+id button6
+id button7
+id button8
+id button9
 id buttonPanel
 id cache_measures
 id cancel_button
