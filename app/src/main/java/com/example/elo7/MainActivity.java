@@ -1,6 +1,10 @@
 package com.example.elo7;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
@@ -23,7 +27,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    RecyclerView recyclerView;
+    Adapter adapter;
+    ArrayList<String> items;
     private Toolbar toolbar;
     private SearchView mysearchView;
     private TextView text;
@@ -39,17 +48,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mysearchView = (SearchView)findViewById(R.id.bar_search);
         mysearchView.setQuery("quadros decorativos",true);// defino a frase inicial na bar
         setSupportActionBar(toolbar);
-
         Drawable upArrow = getResources().getDrawable(R.drawable.abc_ic_ab_back_material);
         upArrow.setColorFilter(Color.parseColor("#FFFFFF"), PorterDuff.Mode.SRC_ATOP);
         getSupportActionBar().setHomeAsUpIndicator(upArrow);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//coloco a seta de voltar na barra
         getSupportActionBar().setTitle("");
-
-        text=findViewById(R.id.textView);
+        //text=findViewById(R.id.textView);
         res= Volley.newRequestQueue(this);
         String url="https://5dc05c0f95f4b90014ddc651.mockapi.io/elo7/api/1/products";
-        json(url); // chamo a leitura do json
+       // json(url); // chamo a leitura do json
         bt1= findViewById(R.id.button);
         bt2 = findViewById(R.id.button2);
         bt3 = findViewById(R.id.button3);
@@ -68,6 +75,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt7.setOnClickListener(this);
         bt8.setOnClickListener(this);
         bt9.setOnClickListener(this);
+        recyclerView=findViewById(R.id.RV);
+        items=new ArrayList<>();
+        items.add("produto1");
+        items.add("produto2");
+        items.add("produto3");
+        items.add("produto4");
+        items.add("produto5");
+        items.add("produto6");
+        items.add("produto7");
+        items.add("produto8");
+        items.add("produto9");
+        items.add("produto10");
+        items.add("produto11");
+        items.add("produto12");
+        items.add("produto13");
+        items.add("produtoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        items.add("");
+        items.add("produto124@");
+
+        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
+        adapter=new Adapter(this,items);
+        recyclerView.setAdapter(adapter);
     }
 
 

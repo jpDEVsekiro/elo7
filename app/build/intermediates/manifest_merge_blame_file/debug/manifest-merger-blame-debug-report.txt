@@ -36,30 +36,32 @@
 23        android:theme="@style/Theme.Elo7" >
 23-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:13:9-42
 24        <activity
-24-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:14:9-93
+24-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:14:9-130
 25            android:name="com.example.elo7.MainActivity"
 25-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:14:19-47
-26            android:theme="@style/Theme.Elo7" />
-26-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:14:48-81
-27        <activity
-27-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:15:9-21:20
-28            android:name="com.example.elo7.LogoActivity"
-28-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:15:19-47
-29            android:screenOrientation="portrait"
-29-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:15:49-85
-30            android:theme="@style/Theme.Elo7logo" >
-30-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:15:86-123
-31            <intent-filter>
-31-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:16:13-20:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:17:17-69
-32-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:17:25-66
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:19:17-77
-34-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:19:27-74
-35            </intent-filter>
-36        </activity>
-37    </application>
-38
-39</manifest>
+26            android:screenOrientation="portrait"
+26-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:14:82-118
+27            android:theme="@style/Theme.Elo7" />
+27-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:14:48-81
+28        <activity
+28-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:15:9-21:20
+29            android:name="com.example.elo7.LogoActivity"
+29-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:15:19-47
+30            android:screenOrientation="portrait"
+30-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:15:49-85
+31            android:theme="@style/Theme.Elo7logo" >
+31-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:15:86-123
+32            <intent-filter>
+32-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:16:13-20:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:17:17-69
+33-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:17:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:19:17-77
+35-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:19:27-74
+36            </intent-filter>
+37        </activity>
+38    </application>
+39
+40</manifest>

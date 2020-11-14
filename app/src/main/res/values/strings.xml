@@ -2,4 +2,18 @@
     <string name="app_name">elo7</string>
     <string name="logo">logo</string>
     <string name="button">Button</string>
+    <string name="mosaico">mosaico</string>
+    <string name="mdf">mdf</string>
+    <string name="placa">placa</string>
+    <string name="sala">sala</string>
+    <string name="poster">poster</string>
+    <string name="moldura">moldura</string>
+    <string name="frases">frases</string>
+    <string name="kit">kit</string>
+    <string name="placa_decorativa">placa decorativa</string>
+    <string name="todo">TODO</string>
+    <string name="pre_o_antigo">preço antigo</string>
+    <string name="atual">atual</string>
+    <string name="parcelas">parcelas</string>
+    <string name="name">name</string>
 </resources>

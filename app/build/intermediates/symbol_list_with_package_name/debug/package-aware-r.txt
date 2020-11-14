@@ -982,6 +982,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color fundo
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color logo
@@ -1432,6 +1433,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen small_id
 dimen test_mtrl_calendar_day_cornerSize
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
@@ -1592,6 +1594,7 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id RV
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -1706,7 +1709,6 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
-id constraintLayout
 id container
 id content
 id contentPanel
@@ -1831,6 +1833,7 @@ id mytoolbar
 id navigation_header_container
 id never
 id noScroll
+id nome
 id none
 id normal
 id notification_background
@@ -1853,6 +1856,7 @@ id percent
 id pin
 id position
 id postLayout
+id preço_antigo
 id progress_circular
 id progress_horizontal
 id radio
@@ -1936,7 +1940,6 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2035,6 +2038,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_logo
 layout activity_main
+layout card_view
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2135,6 +2139,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
+string atual
 string bottom_sheet_behavior
 string button
 string character_counter_content_description
@@ -2146,12 +2151,17 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string frases
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string kit
 string logo
 string material_slider_range_end
 string material_slider_range_start
+string mdf
+string moldura
+string mosaico
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_content_description
@@ -2187,13 +2197,21 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string name
+string parcelas
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string placa
+string placa_decorativa
+string poster
+string pre_o_antigo
+string sala
 string search_menu_title
 string status_bar_notification_info_overflow
+string todo
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

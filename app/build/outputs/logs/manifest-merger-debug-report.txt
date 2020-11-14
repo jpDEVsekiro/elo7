@@ -85,7 +85,9 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\He
 	android:theme
 		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:13:9-42
 activity#com.example.elo7.MainActivity
-ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:14:9-93
+ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:14:9-130
+	android:screenOrientation
+		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:14:82-118
 	android:theme
 		ADDED from C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:14:48-81
 	android:name
