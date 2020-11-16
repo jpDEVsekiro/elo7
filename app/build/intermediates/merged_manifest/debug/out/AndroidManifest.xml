@@ -19,12 +19,14 @@
         android:label="elo7"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.Elo7"
         android:usesCleartextTraffic="true" >
-        <activity android:name="com.example.elo7.Web" />
+        <activity
+            android:name="com.example.elo7.Web"
+            android:parentActivityName="com.example.elo7.Web" />
         <activity
             android:name="com.example.elo7.MainActivity"
+            android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Elo7"
             android:usesCleartextTraffic="true" />

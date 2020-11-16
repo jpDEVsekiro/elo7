@@ -18,7 +18,7 @@
 12-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:6:22-76
 13
 14    <application
-14-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:9:5-33:19
+14-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:9:5-34:19
 15        android:allowBackup="true"
 15-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:10:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -32,52 +32,56 @@
 20-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:14:9-54
 21        android:supportsRtl="true"
 21-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:15:9-35
-22        android:testOnly="true"
-23        android:theme="@style/Theme.Elo7"
-23-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:16:9-42
-24        android:usesCleartextTraffic="true" >
-24-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:11:9-44
-25        <activity android:name="com.example.elo7.Web" />
-25-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:17:9-50
+22        android:theme="@style/Theme.Elo7"
+22-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:16:9-42
+23        android:usesCleartextTraffic="true" >
+23-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:11:9-44
+24        <activity
+24-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:17:9-74
+25            android:name="com.example.elo7.Web"
 25-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:17:19-38
-26        <activity
-26-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:18:9-22:49
-27            android:name="com.example.elo7.MainActivity"
-27-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:19:13-41
-28            android:screenOrientation="portrait"
-28-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:21:13-49
-29            android:theme="@style/Theme.Elo7"
-29-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:22:13-46
-30            android:usesCleartextTraffic="true" />
-30-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:20:13-48
-31        <activity
-31-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:23:9-32:20
-32            android:name="com.example.elo7.LogoActivity"
-32-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:24:13-41
-33            android:screenOrientation="portrait"
-33-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:25:13-49
-34            android:theme="@style/Theme.Elo7logo" >
-34-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:26:13-50
-35            <intent-filter>
-35-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:27:13-31:29
-36                <action android:name="android.intent.action.MAIN" />
-36-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:28:17-69
-36-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:28:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:30:17-77
-38-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:30:27-74
-39            </intent-filter>
-40        </activity>
-41
-42        <provider
-42-->[com.squareup.picasso:picasso:2.71828] C:\Users\Hermione\.gradle\caches\transforms-2\files-2.1\b596593d3eff3823435bdd6317b398ba\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-43            android:name="com.squareup.picasso.PicassoProvider"
-43-->[com.squareup.picasso:picasso:2.71828] C:\Users\Hermione\.gradle\caches\transforms-2\files-2.1\b596593d3eff3823435bdd6317b398ba\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-44            android:authorities="com.example.elo7.com.squareup.picasso"
-44-->[com.squareup.picasso:picasso:2.71828] C:\Users\Hermione\.gradle\caches\transforms-2\files-2.1\b596593d3eff3823435bdd6317b398ba\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-45            android:exported="false" />
-45-->[com.squareup.picasso:picasso:2.71828] C:\Users\Hermione\.gradle\caches\transforms-2\files-2.1\b596593d3eff3823435bdd6317b398ba\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-46    </application>
-47
-48</manifest>
+26            android:parentActivityName="com.example.elo7.Web" />
+26-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:17:39-72
+27        <activity
+27-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:18:9-23:49
+28            android:name="com.example.elo7.MainActivity"
+28-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:19:13-41
+29            android:launchMode="singleTop"
+29-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:21:13-43
+30            android:screenOrientation="portrait"
+30-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:22:13-49
+31            android:theme="@style/Theme.Elo7"
+31-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:23:13-46
+32            android:usesCleartextTraffic="true" />
+32-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:20:13-48
+33        <activity
+33-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:24:9-33:20
+34            android:name="com.example.elo7.LogoActivity"
+34-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:25:13-41
+35            android:screenOrientation="portrait"
+35-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:26:13-49
+36            android:theme="@style/Theme.Elo7logo" >
+36-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:27:13-50
+37            <intent-filter>
+37-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:28:13-32:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:29:17-69
+38-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:29:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:31:17-77
+40-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:31:27-74
+41            </intent-filter>
+42        </activity>
+43
+44        <provider
+44-->[com.squareup.picasso:picasso:2.71828] C:\Users\Hermione\.gradle\caches\transforms-2\files-2.1\b596593d3eff3823435bdd6317b398ba\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+45            android:name="com.squareup.picasso.PicassoProvider"
+45-->[com.squareup.picasso:picasso:2.71828] C:\Users\Hermione\.gradle\caches\transforms-2\files-2.1\b596593d3eff3823435bdd6317b398ba\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+46            android:authorities="com.example.elo7.com.squareup.picasso"
+46-->[com.squareup.picasso:picasso:2.71828] C:\Users\Hermione\.gradle\caches\transforms-2\files-2.1\b596593d3eff3823435bdd6317b398ba\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+47            android:exported="false" />
+47-->[com.squareup.picasso:picasso:2.71828] C:\Users\Hermione\.gradle\caches\transforms-2\files-2.1\b596593d3eff3823435bdd6317b398ba\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+48    </application>
+49
+50</manifest>

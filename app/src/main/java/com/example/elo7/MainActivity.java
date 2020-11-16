@@ -8,6 +8,7 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SearchView;
@@ -25,7 +26,6 @@ import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Handler handler;
     RecyclerView recyclerView;
     Adapter adapter;
     ArrayList<produto> items;
@@ -40,13 +40,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         res= Volley.newRequestQueue(this);
-        String url="https://5dc05c0f95f4b90014ddc651.mockapi.io/elo7/api/1/products";
         toolbar = (Toolbar)findViewById(R.id.mytoolbar);
         mysearchView = (SearchView)findViewById(R.id.bar_search);
         mysearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String s) {
-                json(url);
+                if(s.trim().toLowerCase().equals("quadros decorativos")){
+                    String url="https://5dc05c0f95f4b90014ddc651.mockapi.io/elo7/api/1/products";
+                    Log.d("Estado", "submit");
+                    json(url);}
+                else {
+                    String url="https://5dc05c0f95f4b90014ddc651.mockapi.io/elo7/api/1/products?q="+s;
+                    json(url);
+                }
                 return true;
             }
 
@@ -55,7 +61,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return false;
             }});
         mysearchView.setQuery("quadros decorativos",true);// defino a frase inicial na bar
-        //mysearchView.requestFocus();
         setSupportActionBar(toolbar);
         Drawable upArrow = getResources().getDrawable(R.drawable.abc_ic_ab_back_material);
         upArrow.setColorFilter(Color.parseColor("#FFFFFF"), PorterDuff.Mode.SRC_ATOP);
@@ -90,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     try {
                         items=new ArrayList<>();
                         TextView quantidade=findViewById(R.id.produtos_encontrados);
-                        quantidade.setText(response.length()-1+" produtos encontrados");
+                        quantidade.setText(response.length()+" produtos encontrados");
                         refresh();
                         for(int i=0;i<response.length();i++){
                         JSONObject produto=response.getJSONObject(i);
