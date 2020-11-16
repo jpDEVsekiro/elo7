@@ -11,9 +11,11 @@
     <string name="frases">frases</string>
     <string name="kit">kit</string>
     <string name="placa_decorativa">placa decorativa</string>
-    <string name="todo">TODO</string>
     <string name="pre_o_antigo">preço antigo</string>
     <string name="atual">atual</string>
     <string name="parcelas">parcelas</string>
     <string name="name">name</string>
+    <string name="produtos_encontrados"></string>
+    <string name="todo">TODO</string>
+    <string name="filtrar">filtrar</string>
 </resources>

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/produto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="15dp"
-    cardview:cardCornerRadius="4dp">
+    android:visibility="visible"
+    cardview:cardCornerRadius="4dp"
+    tools:visibility="visible">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -13,6 +18,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/img_produto"
             android:layout_width="190dp"
             android:layout_height="180dp"
             android:contentDescription="@string/todo"
@@ -21,31 +27,33 @@
         <TextView
             android:id="@+id/nome"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="match_parent"
             android:duplicateParentState="true"
             android:ellipsize="none"
             android:enabled="false"
             android:gravity="center"
             android:text="@string/name"
-            android:textSize="18sp" />
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/preço_antigo"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/pre_o_antigo"
-            android:textSize="18sp" />
+            android:textSize="12sp" />
 
         <TextView
+            android:id="@+id/preço"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/atual"
             android:textSize="18sp" />
 
         <TextView
+            android:id="@+id/parcelas"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/parcelas"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

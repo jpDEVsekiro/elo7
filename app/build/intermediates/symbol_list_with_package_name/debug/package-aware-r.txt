@@ -1548,6 +1548,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_baseline_drag_handle_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_checked_circle
@@ -1774,12 +1775,15 @@ id hideable
 id home
 id homeAsUp
 id honorRequest
+id horizontalScrollView
 id icon
 id icon_group
 id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
+id img_produto
 id info
 id invisible
 id italic
@@ -1844,6 +1848,7 @@ id on
 id outline
 id packed
 id parallax
+id parcelas
 id parent
 id parentPanel
 id parentRelative
@@ -1856,7 +1861,10 @@ id percent
 id pin
 id position
 id postLayout
+id preço
 id preço_antigo
+id produto
+id produtos_encontrados
 id progress_circular
 id progress_horizontal
 id radio
@@ -1940,6 +1948,7 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -1971,6 +1980,8 @@ id up
 id useLogo
 id view_offset_helper
 id visible
+id web
+id webtool
 id withText
 id withinBounds
 id wrap
@@ -2038,6 +2049,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_logo
 layout activity_main
+layout activity_web
 layout card_view
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2151,6 +2163,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string filtrar
 string frases
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
@@ -2208,6 +2221,7 @@ string placa
 string placa_decorativa
 string poster
 string pre_o_antigo
+string produtos_encontrados
 string sala
 string search_menu_title
 string status_bar_notification_info_overflow

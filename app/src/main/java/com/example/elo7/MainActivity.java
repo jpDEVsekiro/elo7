@@ -2,14 +2,12 @@ package com.example.elo7;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.DrawableContainer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SearchView;
@@ -20,22 +18,19 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    Handler handler;
     RecyclerView recyclerView;
     Adapter adapter;
-    ArrayList<String> items;
+    ArrayList<produto> items;
     private Toolbar toolbar;
     private SearchView mysearchView;
-    private TextView text;
     private RequestQueue res;
     Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9 ;
     int[] state={0,0,0,0,0,0,0,0,0};
@@ -44,19 +39,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        res= Volley.newRequestQueue(this);
+        String url="https://5dc05c0f95f4b90014ddc651.mockapi.io/elo7/api/1/products";
         toolbar = (Toolbar)findViewById(R.id.mytoolbar);
         mysearchView = (SearchView)findViewById(R.id.bar_search);
+        mysearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                json(url);
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                return false;
+            }});
         mysearchView.setQuery("quadros decorativos",true);// defino a frase inicial na bar
+        //mysearchView.requestFocus();
         setSupportActionBar(toolbar);
         Drawable upArrow = getResources().getDrawable(R.drawable.abc_ic_ab_back_material);
         upArrow.setColorFilter(Color.parseColor("#FFFFFF"), PorterDuff.Mode.SRC_ATOP);
         getSupportActionBar().setHomeAsUpIndicator(upArrow);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//coloco a seta de voltar na barra
         getSupportActionBar().setTitle("");
-        //text=findViewById(R.id.textView);
-        res= Volley.newRequestQueue(this);
-        String url="https://5dc05c0f95f4b90014ddc651.mockapi.io/elo7/api/1/products";
-       // json(url); // chamo a leitura do json
         bt1= findViewById(R.id.button);
         bt2 = findViewById(R.id.button2);
         bt3 = findViewById(R.id.button3);
@@ -75,28 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt7.setOnClickListener(this);
         bt8.setOnClickListener(this);
         bt9.setOnClickListener(this);
-        recyclerView=findViewById(R.id.RV);
-        items=new ArrayList<>();
-        items.add("produto1");
-        items.add("produto2");
-        items.add("produto3");
-        items.add("produto4");
-        items.add("produto5");
-        items.add("produto6");
-        items.add("produto7");
-        items.add("produto8");
-        items.add("produto9");
-        items.add("produto10");
-        items.add("produto11");
-        items.add("produto12");
-        items.add("produto13");
-        items.add("produtoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-        items.add("");
-        items.add("produto124@");
 
-        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
-        adapter=new Adapter(this,items);
-        recyclerView.setAdapter(adapter);
     }
 
 
@@ -104,11 +88,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         JsonArrayRequest request= new JsonArrayRequest(Request.Method.GET, url,null,
                 response -> {
                     try {
-                        JSONObject jarray=response.getJSONObject(0);
-                        //String aaa=jarray.getString("title");
-                        JSONObject aaa=jarray.getJSONObject("price");
-                        String aa=aaa.getString("installment");
-                        text.append(aa);
+                        items=new ArrayList<>();
+                        TextView quantidade=findViewById(R.id.produtos_encontrados);
+                        quantidade.setText(response.length()-1+" produtos encontrados");
+                        refresh();
+                        for(int i=0;i<response.length();i++){
+                        JSONObject produto=response.getJSONObject(i);
+                        String nome=produto.getString("title");
+                        String image=produto.getString("picture");
+                            JSONObject price=produto.getJSONObject("price");
+                            String parcelas="";
+                        try {
+                            parcelas=price.getString("installment");
+                        }catch (JSONException e){
+
+                        }
+                        String promo="";
+                            try {
+                                promo=price.getString("nonPromotional");
+                            }catch (JSONException e){
+
+                            }
+                        String preço=price.getString("current");
+                        String link=produto.getString("_link");
+                        items.add(new produto(nome,promo,preço,parcelas,image,"",link));
+                        }
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -117,6 +121,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+
                 error.printStackTrace();
             }
         });
@@ -216,5 +221,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }break;
             }
         }
+    }
+    public void refresh(){
+        recyclerView=(RecyclerView) findViewById(R.id.RV);
+        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
+        adapter=new Adapter(this,items);
+        recyclerView.setAdapter(adapter);
     }
 }
