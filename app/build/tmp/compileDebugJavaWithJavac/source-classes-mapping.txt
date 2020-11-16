@@ -1,5 +1,8 @@
 com/example/elo7/BuildConfig.java
  com.example.elo7.BuildConfig
+com/example/elo7/LogoActivity.java
+ com.example.elo7.LogoActivity
+ com.example.elo7.LogoActivity$1
 com/example/elo7/MainActivity.java
  com.example.elo7.MainActivity
  com.example.elo7.MainActivity$1
@@ -13,6 +16,3 @@ com/example/elo7/Adapter.java
  com.example.elo7.Adapter$1
  com.example.elo7.Adapter$2
  com.example.elo7.Adapter$ViewHolder
-com/example/elo7/LogoActivity.java
- com.example.elo7.LogoActivity
- com.example.elo7.LogoActivity$1

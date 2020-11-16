@@ -11,6 +11,7 @@ public class produto {
         this.preço_anterios = preço_anterios;
         this.preço = preço;
         this.picture = picture;
+        this.parcelas=parcelas;
         this.id = id;
         this._link = _link;
     }

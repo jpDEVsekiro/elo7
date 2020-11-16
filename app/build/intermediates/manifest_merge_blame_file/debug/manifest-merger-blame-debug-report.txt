@@ -18,7 +18,7 @@
 12-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:6:22-76
 13
 14    <application
-14-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:9:5-34:19
+14-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:9:5-33:19
 15        android:allowBackup="true"
 15-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:10:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -55,7 +55,7 @@
 32            android:usesCleartextTraffic="true" />
 32-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:20:13-48
 33        <activity
-33-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:24:9-33:20
+33-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:24:9-32:20
 34            android:name="com.example.elo7.LogoActivity"
 34-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:25:13-41
 35            android:screenOrientation="portrait"
@@ -63,14 +63,14 @@
 36            android:theme="@style/Theme.Elo7logo" >
 36-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:27:13-50
 37            <intent-filter>
-37-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:28:13-32:29
+37-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:28:13-31:29
 38                <action android:name="android.intent.action.MAIN" />
 38-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:29:17-69
 38-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:29:25-66
 39
 40                <category android:name="android.intent.category.LAUNCHER" />
-40-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:31:17-77
-40-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:31:27-74
+40-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:30:17-77
+40-->C:\Users\Hermione\AndroidStudioProjects\elo7\app\src\main\AndroidManifest.xml:30:27-74
 41            </intent-filter>
 42        </activity>
 43
