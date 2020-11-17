@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
@@ -32,12 +32,12 @@
         "source": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
         "merged": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_reorder_24.xml.flat",
         "source": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\src\\main\\res\\drawable\\ic_baseline_reorder_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\Hermione\\AndroidStudioProjects\\elo7\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_web.xml.flat",

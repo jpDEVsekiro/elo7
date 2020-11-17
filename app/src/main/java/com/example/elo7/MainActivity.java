@@ -96,6 +96,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt7.setOnClickListener(this);
         bt8.setOnClickListener(this);
         bt9.setOnClickListener(this);
+
+
     }
 
     private void fecharteclado(View focus) {
@@ -112,6 +114,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         items = new ArrayList<>();
                         quantidade.setText(response.length() + " produtos encontrados");
                         refresh();
+                        View focus=getCurrentFocus();
+                        fecharteclado(focus);
 
                         for (int i = 0; i < response.length(); i++) {
 
@@ -137,6 +141,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         }
 
                     } catch (JSONException e) {
+                        View focus=getCurrentFocus();
+                        fecharteclado(focus);
                         quantidade.setText( "sem conexão");
                         e.printStackTrace();
                     }
@@ -144,13 +150,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                View focus=getCurrentFocus();
+                fecharteclado(focus);
                 quantidade.setText( "sem conexão");
                 error.printStackTrace();
             }
         });
         this.request.add(request);
+
     }
     public void refresh() { //atualizo o recyclerview
+
         recyclerView = (RecyclerView) findViewById(R.id.RV);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         adapter = new Adapter(this, items);
@@ -164,6 +174,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (state[0] == 0) {
                     bt1.setBackgroundResource(R.drawable.button_click);
                     state[0]++;
+
                 } else {
                     bt1.setBackgroundResource(R.drawable.custom_button);
                     state[0]--;
